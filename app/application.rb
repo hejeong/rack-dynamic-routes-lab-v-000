@@ -10,9 +10,8 @@ class Application
           resp.write "We don't have this item"
           resp.status = 400
         else
-
-
-        end 
+          resp.write "#{found_item.price}\n"
+        end
     else
         resp.status = 404
     end
